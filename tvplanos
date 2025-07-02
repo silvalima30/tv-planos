@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planos de TV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Assine Já Seu Plano TV Express!</h1>
+    <p>Planos com mais de 150 canais, filmes e séries em alta qualidade</p>
+  </header>
+
+  <section class="planos">
+    <h2>Escolha o Seu Plano</h2>
+    <div class="card">
+      <h3>Plano Bronze</h3>
+      <p>30 Dias</p>
+      <p>R$ 29,90/mês</p>
+    </div>
+    <div class="card">
+      <h3>Plano Prata</h3>
+      <p>60 Dias</p>
+      <p>R$ 49,90/mês</p>
+    </div>
+    <div class="card">
+      <h3>Plano Ouro</h3>
+      <p>90 Dias</p>
+      <p>R$ 69,90/mês</p>
+    </div>
+    <div class="card">
+      <h3>Plano Diamante</h3>
+      <p>180 Dias</p>
+      <p>R$ 99,90/mês</p>
+    </div>
+  </section>
+
+  <section class="formulario">
+    <h2>Assine Agora</h2>
+    <form id="formCompra">
+      <label>Nome:</label>
+      <input type="text" name="nome" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Telefone:</label>
+      <input type="tel" name="telefone" required>
+
+      <label>Escolha o plano:</label>
+      <select name="plano" required>
+        <option value="">Selecione...</option>
+        <option value="bronze">Plano Bronze - R$29,90</option>
+        <option value="prata">Plano Prata - R$49,90</option>
+        <option value="ouro">Plano Ouro - R$69,90</option>
+        <option value="diamante">Plano Diamante - R$99,90</option>
+      </select>
+
+      <label>Método de pagamento:</label>
+      <select name="pagamento" required>
+        <option value="">Selecione...</option>
+        <option value="pix">PIX</option>
+        <option value="cartao">Cartão de Crédito</option>
+      </select>
+
+      <button type="submit">Finalizar Compra</button>
+    </form>
+
+    <div id="mensagem"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - TV Express. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
